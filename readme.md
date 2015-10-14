@@ -5,7 +5,8 @@ Your task is to create a Javascript object that represents a calculator. It shou
 * Subtraction
 * Multiplication
 * Division
-* Exponents
+* Exponents (Hint: Look up Javascript's Math object)
+* An operation of your choice!
 
 You should be able to run these methods like so from your browser's Javascript console...
 ```js
