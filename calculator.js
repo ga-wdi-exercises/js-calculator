@@ -1,18 +1,18 @@
 var calc = {
-  add: function (a, b) {
-    return a + b;
+  add: function (addend1, addend2) {
+    return addend1 + addend2;
   },
-  subtract: function (a, b) {
-    return b - a;
+  subtract: function (minuend, subtrahend) {
+    return minuend - subtrahend;
   },
-  multiply: function (a, b) {
-    return a * b;
+  multiply: function (multiplicand, multiplier) {
+    return multiplicand * multiplier;
   },
-  divide: function (a, b) {
-    return a / b;
+  divide: function (dividend, divisor) {
+    return dividend / divisor;
   },
-  exponentiate: function (a, b) {
-    return Math.pow(a, b);
+  exponentiate: function (base, exponent) {
+    return Math.pow(base, exponent);
   }
 };
 
