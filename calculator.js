@@ -2,7 +2,7 @@
 var setSavedValue = function(calcResult) {
   calculator.savedValue += calcResult;
 
-  // Give user output
+  // Console output
   console.log("This evaluated to: " + calcResult);
   console.log("Saved value is: " + calculator.savedValue + ". Type calculator.clear(); to reset");
 }
