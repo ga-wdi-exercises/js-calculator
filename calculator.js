@@ -33,8 +33,11 @@ var calculate = {
 var math = {
   addition: calculate.add(1,2)
 }
-// "clear" value by putting in a blank value 
+// "clear" value by putting in a blank value
 console.log (math);
 var math = " "
 
 console.log(math)
+
+//bonus 2
+//i'm guessing a need a loop here, but I don't really understand the question
