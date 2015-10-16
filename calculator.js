@@ -15,8 +15,6 @@ var calculator = {
     console.log( Math.pow(num1,num2));
   },
 
-// given 2 and 4, 2 to the power of 4. 2 * 2 * 2 * 2. 4(2 * 2)
-
 };
 
 console.log("To use this calculator: call calculator.add(num1, num2) or .subtract, .multiply, .division, or .powerX");
