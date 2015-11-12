@@ -12,7 +12,7 @@
 // * Exponents (Hint: Look up Javascript's Math object)
 // * An operation of your choice!
 
-// You should be able to run these methods like so from your browser's Javascript console...
+// You should be able to run   these methods like so from your browser's Javascript console...
 // ```js
 // calculator.add(1,2);
 // // => 3
