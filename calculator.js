@@ -1,3 +1,4 @@
+//Calculator!
 var calc = {
     add: function(num1, num2) {
         return num1 + num2},
@@ -13,4 +14,5 @@ var calc = {
         return Math.sqrt(num1)}
 }
 
+//run/test functions below:
 calc.squareRoot(144)
