@@ -52,6 +52,7 @@ var calcBonus = {
 };
 
 /*
-the bonus section sort of gives the calculator 'memory', but maybe not the way
-it's described in the bonus section.  I wasn't sure how to make that example
-sequence evaluate to 10.  
+the bonus code sort of gives the calculator 'memory', but maybe not the way
+it's described in the bonus section of readme.md.  I wasn't sure how to make that example
+sequence evaluate to 10.
+*/
