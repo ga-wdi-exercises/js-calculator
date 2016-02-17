@@ -1,0 +1,29 @@
+function add(x, y) {
+  var z = x + y;
+  return z;
+}
+function subtract(x, y) {
+  var z = x - y;
+  return z;
+}
+function multiply(x, y) {
+  var z = x * y;
+  return z;
+}
+function divide(x, y) {
+  var z = x / y;
+  return z;
+}
+function exponents(x, y) {
+  var z = Math.pow(x, y);
+  return z;
+}
+function Square_Root(x) {
+  var y = Math.sqrt(x);
+  return y;
+}
+
+function () {
+    var x = document.getElementById("x").selectedIndex;
+     document.getElementsByTagName("var x")[x].value);
+}
