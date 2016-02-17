@@ -18,7 +18,8 @@ calculator.add(1,2);
 
 Give your calculator memory and allow it to persist the result of multiple operations.
 * Store this result in a `value` property.
-* Example: running `calculator.add(1,2)`, `calculator.add(2,2)` and `calculator.mutliply(2,2)` in sequence would result in a `value` of 10.
+* Example: running `calculator.add(1,2)`, `calculator.add(2,2)` and `calculator.mutliply(2,2)` in sequence would result
+in a `value` of 10.
 * Give your calculator a `clear` method that resets `value`.
 
 ### Bonus 2
