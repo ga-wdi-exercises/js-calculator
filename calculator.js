@@ -1,26 +1,26 @@
 var calculator = {
     value: 0,
     valAdd: function(result) {
-        calculator.value += result;
+        this.value += result;
         return result;
     },
     add: function(n1, n2) {
-        return calculator.valAdd(n1 + n2);
+        return this.valAdd(n1 + n2);
     },
     subtract: function(n1, n2) {
-        return calculator.valAdd(n1 - n2);
+        return this.valAdd(n1 - n2);
     },
     multiply: function(n1, n2) {
-        return calculator.valAdd(n1 * n2);
+        return this.valAdd(n1 * n2);
     },
     divide: function(n1, n2) {
-        return calculator.valAdd(n1 / n2);
+        return this.valAdd(n1 / n2);
     },
     pow: function(n1, n2) {
-        return calculator.valAdd(Math.pow(n1, n2));
+        return this.valAdd(Math.pow(n1, n2));
     },
     clear: function() {
-        calculator.value = 0;
+        this.value = 0;
     }
 }
 
