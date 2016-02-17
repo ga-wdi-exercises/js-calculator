@@ -1,24 +1,39 @@
+var value;
+
 var calculator = {
   add: function(num1,num2) {
-    return num1 + num2;
+    value = num1 + num2;
+    return num1 + num2
   },
   sub: function(num1,num2) {
+    value = num1 - num2;
     return num1 - num2;
   },
   multiply: function(num1,num2) {
+    value = num1 * num2;
     return num1 * num2;
   },
   divide: function(num1,num2) {
+    value = num1 / num2;
     return num1 / num2;
   },
-  exponent: function(num1,num2) {
-    return pow(num1, num2);
+  exp: function(num1,num2) {
+    value = Math.pow(num1,num2);
+    return Math.pow(num1,num2);
   },
-  remainder: function(num1,num2) {
+  remain: function(num1,num2) {
+    value = num1 % num2;
     return num1 % num2;
-  }
-  remainder: function(num1,num2) {
-    var remAnswer = function()
+  },
+  clear: function() {
+    value = 0;
   }
 }
-calculator.add(1,3);
+calculator.remain(3,2);
+console.log(value);
+
+calculator.add(1,2)
+calculator.add(2,2)
+calculator.multiply(2,2)
+calculator.clear();
+value;
