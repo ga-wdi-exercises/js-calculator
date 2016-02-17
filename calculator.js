@@ -18,7 +18,7 @@ var jsCal = {
   expo: function(num1, num2){
     var finalNum = 1;
     for(i = 0; i<num2; i++){
-        finalNum *= num1;
+        finalNum = finalNum * num1;
         console.log("i is " + i + " " + "so far.");
         console.log("num1 equals," + num1);
     }
@@ -26,10 +26,14 @@ var jsCal = {
   },
   /* I thought this would work,
   I looked it up and even saw this exact answer in stackoverflow
-  but for some reason, num1 stays the same.
+  (in C) but for some reason, num1 stays the same.
   */
 
-  otherOperate: function(){
-    return(console.log("Almost there."))
+  averageNum: function(x){
+    //must pass an array of numbers
+    for(i =0; 1<x.length; i++){
+      finalRes = fianlRes + x[i]
+    };
+    return(finalRes)
   }
 }
