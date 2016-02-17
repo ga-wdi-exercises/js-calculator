@@ -11,7 +11,6 @@ var calculate = {
   divide:function(n1,n2){
     return n1 / n2;
     },
-  /*Let it be known that I had to google what exponents even were again...much less the math function -- neat though!;) */
   exp:function(n1){
     return Math.exp(n1);
     },
