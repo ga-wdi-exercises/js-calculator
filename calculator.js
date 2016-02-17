@@ -1,5 +1,5 @@
 var calculator = {
-  value: null;
+  value: null,
   add: function(num1, num2) {
     this.value = num1 + num2;
     return this.value;
@@ -17,7 +17,9 @@ var calculator = {
       this.value = num1 / num2;
       return this.value;
     }
-    else return NaN;
+    else {
+    return NaN;
+    }
   },
   pow: function(num1, num2) {
     this.value = Math.pow(num1, num2);
@@ -26,5 +28,9 @@ var calculator = {
   sqrt: function(num1) {
     this.value = Math.sqrt(num1);
     return this.value;
+  }
+  clear: function() {
+    this.value = null;
+    console.log("memory cleared")
   }
 }
