@@ -59,7 +59,13 @@ var calc = {
     console.log(this.value);
   },
   // I don't think I completely understand what "BONUS 2" is asking.
+
+  /* I googled "javascript calculator method to parse through a string"
+  to try to gain some insight and found the MDN page on the eval method.
+  It took me a while to realize that "^" is the Bitwise XOR operator and
+  not an exponential operator */
   master: function (string) {
-    
+    this.value = eval(string);
+    console.log(this.value);
   }
 }
