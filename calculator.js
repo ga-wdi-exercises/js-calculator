@@ -21,5 +21,8 @@ var calculator = {
   },
   clear: function() {
     return value = 0;
+  },
+  evaluate: function(a) {
+    return value = eval(a);
   }
 };
