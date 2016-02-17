@@ -14,10 +14,6 @@ var calculator = {
         return calculator.valAdd(n1 * n2);
     },
     divide: function(n1, n2) {
-        if (n2 === 0) {
-            console.log("Can't divide by zero");
-            return NaN;
-        }
         return calculator.valAdd(n1 / n2);
     },
     pow: function(n1, n2) {
@@ -40,7 +36,7 @@ function assertCalc(method, args, expect) {
 assertCalc("add", [10, 20], 30);
 assertCalc("subtract", [60, 9], 51);
 assertCalc("multiply", [7, 8], 56);
-assertCalc("divide", [10, 0], NaN); // This fails :o ! NaN is not NaN. Weird.
+assertCalc("divide", [10, 0], Infinity);
 assertCalc("divide", [18, 3], 6);
 assertCalc("pow", [2, 6], 64);
 
