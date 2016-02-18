@@ -11,8 +11,8 @@ var jsCal = {
     return(num1 * num2);
   },
 
-  divid: function(num1, num2){
-    return(num1 / num2);
+  divid: function(bigNum, lilNum){
+    return(bigNum / lilNum);
   },
 
   expo: function(num1, num2){
@@ -22,12 +22,13 @@ var jsCal = {
     }
     return(finalNum);
   },
-
-  averageNum: function(x){
-    //must pass an array of numbers
-    for(i =0; 1<x.length; i++){
-      finalRes = fianlRes + x[i]
-    };
-    return(finalRes)
+  //must pass an array of numbers
+  averageNum: function(array){
+    var addNum = 0;
+    for(i =0; i<array.length; i++){
+      addNum = addNum + array[i];
+    }
+    var finalRes = addNum / array.length;
+    return(finalRes);
   }
 }
