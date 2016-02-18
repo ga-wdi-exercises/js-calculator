@@ -1,24 +1,17 @@
-```
-  calc = {
-  add:function(num1, num2) {
-      console.log(num1 + num2);
-      return num1 + num2;
-    };
-  sub:function (num1, num2) {
-    console.log(num1 - num2);
-    return num1 - num2;
-  }
-  mult:function ( num1, num2 ) {
-    console.log( num1 * num2 );
-    return num1 * num2;
-  }
-  div:function (num1, num2) {
-    console.log(num1 / num2);
-    return num1 / num2;
-  }
-  exp:function math.pow (4, 3);
-    console.console.log(4,3);
-    return 4,3
+### Javascript Calculator
+
+Your task is to create a Javascript object that represents a calculator. It should have methods that provide it with the following functionality...
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Exponents (Hint: Look up Javascript's Math object)
+* An operation of your choice!
+
+You should be able to run these methods like so from your browser's Javascript console...
+```js
+calculator.add(1,2);
+// => 3
 ```
 
 ### Bonus 1
