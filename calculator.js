@@ -41,5 +41,10 @@ var calculator = {
   {
     this.value = 0;
     return this.value;
+  },
+
+  view: function()
+  {
+    console.log("Current value: " + this.value);
   }
 }
