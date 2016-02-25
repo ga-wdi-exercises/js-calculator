@@ -1,4 +1,31 @@
 ### Javascript Calculator
+var calculator = {
+  value: null,
+  add: function(num1,num2){
+    this.value = num1+num2;
+    return this.value;
+  },
+
+  subtract: function(num1,num2){
+    this.value = num1-num2;
+    return this.value;
+    },
+  multiply: function(num1,num2){
+    this.value = num1*num2;
+    return this.value;
+    },
+  divide: function(num1,num2){
+    this.value = num1/num2;
+    return this.value;
+    },
+  exponent: function(num1,num2){
+    this.value = math.pow(num1,num2);
+    return this.value;
+    },
+  isGreaterThan: function(num1,num2){
+    this.value = num1>num2};
+    return this.value;
+};
 
 Your task is to create a Javascript object that represents a calculator. It should have methods that provide it with the following functionality...
 * Addition
@@ -13,6 +40,8 @@ You should be able to run these methods like so from your browser's Javascript c
 calculator.add(1,2);
 // => 3
 ```
+
+
 
 ### Bonus 1
 
