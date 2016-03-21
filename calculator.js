@@ -24,6 +24,14 @@ var calculator = {
       return (x * calculator.expo(x, y - 1));
     }
   },
+  addArray: function(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i ++) {
+      sum += array[i];
+    }
+    calculator.value = sum;
+    return sum;
+  },
   storeVal: function(val) {
     calculator.value = val;
   },
