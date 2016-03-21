@@ -26,11 +26,21 @@ var calculator = {
   },
 
   exp: function (base,power) {
+    var negExp;
+    if (power<0) {
+      negExp = true;
+      power=power*-1;
+    }
     var result=1;
     for (var i = 0; i < power; i++){
       result = result * base;
     }
-    return result;;
+    if (!negExp) {
+      value=result;
+    } else {
+      value=1/result;
+    }
+    return value;
   }
 
 }
