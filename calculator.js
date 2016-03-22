@@ -27,7 +27,10 @@ var calculator = {
 //  \/ \/ \/ \/  Working memory calculator here \/\|/ \/ \/ \/ \/
 
 // Instructions: MUST USE CALCULATOR above first! This one only uses
-// the previous result.
+// the previous result. Ex: calcMemory.add(4) adds 4 to whatever
+// you had before.  You can keep using calcMemory over and over,
+// but when you use the basic calculator again, the "memory," aka
+// the variable of `value`, is wiped clean.
 
 var calcMemory = {
   add: function(num3){
