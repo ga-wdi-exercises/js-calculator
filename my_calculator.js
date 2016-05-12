@@ -15,6 +15,10 @@ var calc = {
     this.value -= subnum;
     this.showValue();
   },
+  multi: function(multinum){
+    this.value *= multinum;
+    this.showValue();
+  },
   showValue: function(){
     console.log("The current value is " + this.value + ".");
   },
@@ -24,5 +28,8 @@ var calc = {
   }
 };
 
-console.log(calc.add(4, 5));
-console.log(calc.sub(4, 5));
+console.log(calc.add(1, 2));
+console.log(calc.sub(1, 2));
+console.log(calc.multi(1, 2));
+
+calc.showValue();
