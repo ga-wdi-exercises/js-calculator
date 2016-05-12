@@ -11,8 +11,12 @@ var calc = {
     this.value += addnum;
     this.showValue();
   },
+  sub: function(subnum){
+    this.value -= subnum;
+    this.showValue();
+  },
   showValue: function(){
-    console.log("This is my current value:" + this.value);
+    console.log("The current value is " + this.value + ".");
   },
   clear: function(){
     this.value = 0;
@@ -21,3 +25,4 @@ var calc = {
 };
 
 console.log(calc.add(4, 5));
+console.log(calc.sub(4, 5));
