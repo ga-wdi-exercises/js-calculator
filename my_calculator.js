@@ -8,14 +8,16 @@
 var calc = {
   value: 0,
   add: function(addnum){
-    //   return addnum + addnum;
     this.value += addnum;
     this.showValue();
-    console.log(calc.add(4, 5));
+  },
+
+  showValue: function(){
+    console.log("This is my current value:" + this.value);
   }
 };
 
-
+console.log(calc.add(4, 5));
 
 //   clear: function(){
 //     this.value = 0;
