@@ -5,9 +5,19 @@
 // use method math.add(1,3).
 // Syntax error on line 8...
 
-function math (){
-    add: function (addnum1, addnum2) {
-      return addnum1 + addnum2;
-      // console.log(addition(addnum1 + addnum2));
+var calc = {
+  value: 0,
+  add: function(addnum){
+    //   return addnum + addnum;
+    this.value += addnum;
+    this.showValue();
+    console.log(calc.add(4, 5));
   }
-}
+};
+
+
+
+//   clear: function(){
+//     this.value = 0;
+//     this.showValue();
+//   }
