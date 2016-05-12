@@ -19,6 +19,14 @@ var calc = {
     this.value *= multinum;
     this.showValue();
   },
+  divide: function(dividenum){
+    this.value /= dividenum;
+    this.showValue();
+  },
+  expon: function(exponnum){
+    this.value = Math.pow(this.value, exponent);
+    this.showValue();
+  }
   showValue: function(){
     console.log("The current value is " + this.value + ".");
   },
@@ -28,8 +36,9 @@ var calc = {
   }
 };
 
-console.log(calc.add(1, 2));
-console.log(calc.sub(1, 2));
-console.log(calc.multi(1, 2));
+console.log(calc.add(3, 1));
+console.log(calc.sub(3, 1));
+console.log(calc.multi(3, 1));
+console.log(calc.divide(3, 1));
 
 calc.showValue();
