@@ -1,22 +1,11 @@
 // This is my "starter code". I generated it from scatch.
 
-function math (
-    function addition( num1, num2 ) {
-      return(addition( num1 + num2 ));
-      // console.log( num1 * num2 );
-  }
+//Function is math. When his function is called, a function named 'addition' is run with two arguments being passed through it. When num1 and num2 are passed through, it returns and output of that function for a sum of num1 and num2.
 
+// use method math.add(1,3).
 
-
-    // function subtraction( num1, num2 ){
-    //
-    // }
-    //
-    // function multiply( num1, num2 ){
-    //
-    // }
-    //
-    // function divide( num1, num2 ){
-    //
-    // }
-)
+function math (){
+    add: addnum1 + addnum2
+      return addnum1 + addnum2;
+      console.log(addition(addnum1 * addnum2));
+}
