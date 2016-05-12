@@ -11,15 +11,13 @@ var calc = {
     this.value += addnum;
     this.showValue();
   },
-
   showValue: function(){
     console.log("This is my current value:" + this.value);
+  },
+  clear: function(){
+    this.value = 0;
+    this.showValue();
   }
 };
 
 console.log(calc.add(4, 5));
-
-//   clear: function(){
-//     this.value = 0;
-//     this.showValue();
-//   }
