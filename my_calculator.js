@@ -23,10 +23,10 @@ var calc = {
     this.value /= dividenum;
     this.showValue();
   },
-  expon: function(exponnum){
-    this.value = Math.pow(this.value, exponent);
+  exponent: function(expnum){
+    this.value = math.pow(this.value, expnum);
     this.showValue();
-  }
+  },
   showValue: function(){
     console.log("The current value is " + this.value + ".");
   },
@@ -42,3 +42,7 @@ console.log(calc.multi(3, 1));
 console.log(calc.divide(3, 1));
 
 calc.showValue();
+
+function speak() {
+  console.log(word);
+}
