@@ -1,10 +1,11 @@
 var calculator = {
   add : function(a,b) {
-    var sum;
-    sum = a + b;
-    return sum;
+    return a + b;
   },
   sub : function(a,b) {
     return a - b;
-  }
+  },
+  mul : function(a,b) {
+    return a * b;
+  },
 }
