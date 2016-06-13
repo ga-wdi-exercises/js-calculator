@@ -10,5 +10,8 @@ var calculator = {
   },
   div : function(a,b) {
     return a / b;
+  },
+  exp : function(a,b) {
+    return Math.pow(a,b);
   }
 }
