@@ -1,6 +1,14 @@
 var calculator = {
+  value : 0,
   add : function(a,b) {
-    return a + b;
+    if (arguments.length == 1) {
+      this.value += a;
+    }
+    else {
+      this.value = a + b;
+    }
+    console.log(this.value.toString());
+    return this.value;
   },
   sub : function(a,b) {
     return a - b;
@@ -13,5 +21,9 @@ var calculator = {
   },
   exp : function(a,b) {
     return Math.pow(a,b);
-  }
+  },
+  mod : function(a,b) {
+    return a % b;
+  },
+
 }
