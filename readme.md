@@ -25,3 +25,39 @@ Give your calculator memory and allow it to persist the result of multiple opera
 
 Give your calculator a "master" method that can parse through a string of operations (e.g., `(2 - 1) * (5 ^ 2)`)
 * Your calculator should still have memory.
+
+---
+
+## Testing
+
+- [jasmine](http://jasmine.github.io/2.0/introduction.html)
+- [jasmine-node](https://github.com/mhevery/jasmine-node)
+
+Install the latest official version
+
+```bash
+$ npm install -g jasmine-node
+```
+
+Install dependencies
+
+```bash
+# Install jasmine-node and jasmine-expect that are specified in package.json
+$ npm install
+```
+
+Write tests
+
+- 'spec/*spec.js'
+
+Run tests
+
+```bash
+npm run test # jasmine-node spec
+```
+
+or
+
+```bash
+jasmine-node spec
+```
