@@ -11,19 +11,53 @@ var calculator = {
     return this.value;
   },
   sub : function(a,b) {
-    return a - b;
+    if (arguments.length == 1) {
+      this.value -= a;
+    }
+    else {
+      this.value = a - b;
+    }
+    console.log(this.value.toString());
+    return this.value;
   },
   mul : function(a,b) {
-    return a * b;
+    if (arguments.length == 1) {
+      this.value *= a;
+    }
+    else {
+      this.value = a * b;
+    }
+    console.log(this.value.toString());
+    return this.value;
   },
   div : function(a,b) {
-    return a / b;
+    if (arguments.length == 1) {
+      this.value /= a;
+    }
+    else {
+      this.value = a / b;
+    }
+    console.log(this.value.toString());
+    return this.value;
   },
   exp : function(a,b) {
-    return Math.pow(a,b);
+    if (arguments.length == 1) {
+      this.value = Math.pow(this.value,a);
+    }
+    else {
+      this.value = Math.pow(a, b);
+    }
+    console.log(this.value.toString());
+    return this.value;
   },
   mod : function(a,b) {
-    return a % b;
-  },
-
+    if (arguments.length == 1) {
+      this.value %= a;
+    }
+    else {
+      this.value = a % b;
+    }
+    console.log(this.value.toString());
+    return this.value;
+    },
 }
