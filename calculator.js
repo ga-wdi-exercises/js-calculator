@@ -60,4 +60,9 @@ var calculator = {
     console.log(this.value.toString());
     return this.value;
     },
+  clear : function() {
+      this.value = 0;
+      console.log("0");
+      return 0;
+    }
 }
