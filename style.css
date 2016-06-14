@@ -1,0 +1,112 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.calculator {
+    background: linear-gradient(#9dd2ea, #8bceec);
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 380px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px 20px 9px;
+    box-shadow: 0px 4px #009de4;
+}
+
+/*.result {
+    width: 410px;
+    height: 100px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+}*/
+
+.top span.clear {
+	float: left;
+}
+
+.top .screen {
+	height: 40px;
+    width: 270px;
+    float: right;
+	background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.keypad, .top {
+    overflow: hidden;
+}
+
+.keypad div, .top div.clear {
+    height: 36px;
+    width: 60px;
+    margin: 0 7px 11px 0;
+    font-size: 18px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    position: relative;
+	top: 0;
+    transition: all 0.2s ease;
+}
+
+.keypad div:hover {
+    background: gray;
+}
+
+.keypad div.operator {
+    background: #FFF0F5;
+}
+
+#equals {
+    background: #f1ff92;
+    box-shadow: 0px 4px #9da853;
+}
+
+.top div.clear {
+    background-color: #ff9fa8;
+	box-shadow: 0px 4px #ff7c87;
+	color: white;
+}
+
+.keypad div:hover {
+	background: #9c89f6;
+	box-shadow: 0px 4px #6b54d3;
+	color: white;
+}
+
+.keypad div#equals:hover {
+	background: #abb850;
+	box-shadow: 0px 4px #717a3;
+    color: black;
+}
+
+.top div.clear:hover {
+	background: #f68991;
+	box-shadow: 0px 4px #d3545d;
+	color: white;
+}
+
+.keypad div:active {
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+.keypad div#equals:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
+}
+
+.top div.clear:active {
+	top: 4px;
+	box-shadow: 0px 0px #d3545d;
+}
