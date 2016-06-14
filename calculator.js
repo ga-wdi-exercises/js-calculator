@@ -54,7 +54,7 @@ var calculator = {
     if (arguments.length == 1) {
       this.value %= a;
     }
-    else {
+    else { 
       this.value = a % b;
     }
     console.log(this.value.toString());
