@@ -1,0 +1,24 @@
+{
+  "name": "js-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator_spec.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-expect": "^2.0.2",
+    "jasmine-node": "^1.14.5"
+  },
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnishiguchi/js-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnishiguchi/js-calculator/issues"
+  },
+  "homepage": "https://github.com/mnishiguchi/js-calculator#readme"
+}
