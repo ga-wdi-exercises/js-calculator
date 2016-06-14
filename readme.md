@@ -18,8 +18,20 @@ calculator.add(1,2);
 
 Give your calculator memory and allow it to persist the result of multiple operations.
 * Store this result in a `value` property.
-* Example: running `calculator.add(1,2)`, `calculator.add(3,2)` and `calculator.mutliply(5,2)` in sequence would result in a `value` of 10. In this example, the first argument for each method call represents the running value.  
 * Give your calculator a `clear` method that resets `value`.
+
+For example:
+
+```js
+calculator.add(1)
+// value is 1
+calculator.add(2)
+// value is 3
+calculator.add(2)
+// value is 5
+calculator.multiply(2)
+// value is 10
+```
 
 ### Bonus 2
 
