@@ -5,6 +5,10 @@ var calculator = {
   subtract: function (sub1, sub2){
     return sub1 - sub2;
   },
+  multiply: function (mult1, mult2){
+    return mult1 * mult2;
+  },
+
 
 }
 
