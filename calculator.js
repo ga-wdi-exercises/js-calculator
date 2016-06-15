@@ -1,7 +1,12 @@
 var calculator = {
-  add: function (addA, addB){
-    return addA + addB;
-  }
+  add: function (add1, add2){
+    return add1 + add2;
+  },
+  subtract: function (sub1, sub2){
+    return sub1 - sub2;
+  },
+
+}
 
 //need an add function that adds 2 numbers together
 //need a subtract function that takes the difference between 2 numbers
@@ -10,12 +15,3 @@ var calculator = {
 
 //need an exponents function that perfroms an exponent function
 //the hint provided says to look up Javascript's Math function for this.
-
-
-
-
-
-
-
-
-}
