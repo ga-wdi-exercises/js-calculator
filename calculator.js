@@ -1,12 +1,17 @@
+var calculator = {
+//need an add function that adds 2 numbers together
+//need a subtract function that takes the difference between 2 numbers
+//need a multiplication function the multiplies 2 numbers together
+//need a division function the divides 2 numbers
+
+//need an exponents function that perfroms an exponent function
+//the hint provided says to look up Javascript's Math function for this.
 
 
-//Javascript Calculat
 
-//Your task is to create a Javascript object that represents a calculator. It should have methods that provide it with the following functionality...
 
-//Addition
-//Subtraction
-//Multiplication
-//Division
-//Exponents
-//You should be able to run these methods like so from your browser's Javascript console...
+
+
+
+
+}
