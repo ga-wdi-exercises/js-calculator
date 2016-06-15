@@ -1,4 +1,8 @@
 var calculator = {
+  add: function (addA, addB){
+    return addA + addB;
+  }
+
 //need an add function that adds 2 numbers together
 //need a subtract function that takes the difference between 2 numbers
 //need a multiplication function the multiplies 2 numbers together
