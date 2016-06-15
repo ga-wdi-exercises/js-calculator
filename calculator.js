@@ -8,7 +8,9 @@ var calculator = {
   multiply: function (mult1, mult2){
     return mult1 * mult2;
   },
-
+  divide: function (divd1, divd2){
+    return divd1 / divd2;
+  },
 
 }
 
