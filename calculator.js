@@ -11,7 +11,9 @@ var calculator = {
   divide: function (divd1, divd2){
     return divd1 / divd2;
   },
-
+  exponent: function (base, exponent){
+    return Math.pow(base, exponent);
+  }
 }
 
 //need an add function that adds 2 numbers together
