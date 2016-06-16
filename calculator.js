@@ -1,35 +1,28 @@
-var createCalculator = function () {
+var Calculator = function () {
 
-	var calculator = {};
+	this.value = 0;
 
-	calculator.CalculatorValue = 0;
+};
 
-	calculator.value = function () {
-		return this.CalculatorValue;
-	};
+Calculator.prototype.add = function (num) {
+	this.value += num;
+};
 
-	calculator.add = function (num) {
-		this.CalculatorValue += num;
-	};
+Calculator.prototype.subtract = function (num) {
+	this.value -= num;
+};
 
-	calculator.subtract = function (num) {
-		this.CalculatorValue -= num;
-	};
+ Calculator.prototype.multiply = function (num) {
+	this.value *= num;
+};
 
-  calculator.multiply = function (num) {
-		this.CalculatorValue *= num;
-	};
+ Calculator.prototype.divide = function (num) {
+	this.value /= num;
+};
 
-  calculator.divide = function (num) {
-		this.CalculatorValue /= num;
-	};
-
-  calculator.exponents = function (num) {
-    this.CalculatorValue = Math.pow(num);
-  };
-
-  calculator.clear = function () {
-    this.calculator.CalculatorValue;
-  };
-	return calculator;
+Calculator.prototype.exponents = function (num) {
+    this.value = Math.pow(this.value, num);
+};
+Calculator.prototype.clear = function () {
+	this.value = 0;
 };
