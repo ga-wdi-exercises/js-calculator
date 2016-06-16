@@ -1,0 +1,11 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.operator {
+  height: 10%;
+  width: 10%;
+  padding: 20px;
+  font-size: 50px;
+}
