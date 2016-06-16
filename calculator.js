@@ -5,26 +5,18 @@ console.log ("calculator. add, subtract, multiply, divide")
 
 var calculator = {
   add: function (num1,num2){
-    var sum = 0
-    sum = num1 + num2
-    console.log (sum);
+    return num1 + num2;
   },
 
   subtract: function (num1,num2){
-  var dif = 0
-  dif = num1 - num2
-  console.log (dif);
+  return  num1 - num2;
  },
 
   multiply: function (num1,num2){
-  var prod = 0
-  prod = num1 * num2
-  console.log (prod);
+  return num1 * num2;
  },
 
   divide: function (num1,num2){
-  var quot = 0
-  quot = num1 / num2
-  console.log (quot);
+  return  num1 / num2;
   }
 };
