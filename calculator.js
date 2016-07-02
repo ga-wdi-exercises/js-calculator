@@ -32,11 +32,11 @@ var calculator = {
   exponent: function exponent(num) {
     value = Math.pow(value, num);
     return value;
-  }
+  },
   half: function half(num) {
     value = num / 2;
     return value;
-  }
+  },
   reset: function reset() {
     value = 0;
     return value;
