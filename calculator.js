@@ -48,35 +48,3 @@ var calculator = {
     return calculator.value;
   }
 }
-
-
-BONUS 2)
-
-var calculator = {
-  value: 0,
-  master: function (string) {
-    calculator.value = calculator.value + parseInt(string);
-  }
-  add: function (num) {
-    calculator.value = calculator.value + num;
-    return calculator.value;
-  },
-  subtract: function (num) {
-    calculator.value = calculator.value - num;
-    return calculator.value;
-  },
-  multiply: function (num) {
-    calculator.value = calculator.value * num;
-    return calculator.value;
-  },
-  divide: function (num) {
-    calculator.value = calculator.value / num;
-    return calculator.value;
-  },
-  clear: function () {
-    calculator.value = 0;
-    return calculator.value;
-  }
-}
-
-complete.
