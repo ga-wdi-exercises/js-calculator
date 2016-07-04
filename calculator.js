@@ -1,5 +1,9 @@
 var calculator = {
 
+  value: 0,
+
+  // Non-memory functionality
+
   add: function(num1, num2) {
     return num1 + num2;
   },
@@ -56,5 +60,52 @@ var calculator = {
     else {
       return false;
     }
-  }
+  },
+
+  // Memory functionality
+
+  clear: function() {
+    calculator.value = 0;
+    return "value cleared!";
+  },
+
+  add: function(num) {
+    calculator.value += num;
+    return calculator.value;
+  },
+
+  subtract: function(num) {
+    calculator.value -= num;
+    return calculator.value;
+  },
+
+  multiply: function(num) {
+    calculator.value *= num;
+    return calculator.value;
+  },
+
+  divide: function(num) {
+    calculator.value /= num;
+    return calculator.value;
+  },
+
+  divisorsOf: function() {
+    var divisors = [];
+
+    for (var i=1; i<=calculator.value; i++) {
+      if (calculator.value%i == 0) {
+        divisors.push(i);
+      }
+    }
+    return divisors;
+  },
+
+  isPrime: function() {
+    if (calculator.divisorsOf(calculator.value).length == 2) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
 }
