@@ -1,9 +1,17 @@
 var calculate = {
+  //avlue store
+    value: 2,
   //addition
     add: function(num1,num2) {
-      return num1 + num2
+      if (num2 === undefined) {
+  //code for value being added to num1
+        return num1 + calculate.value;
+      }
+      else {
+          return num1 + num2
+        }
     },
-    //subtraction
+  //subtraction
     subtract: function(num1,num2) {
       return num1 - num2
     },
