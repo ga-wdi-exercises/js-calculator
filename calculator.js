@@ -1,5 +1,5 @@
 var calculator = {
-  value = 0,
+   var value = 0,
 
   clear : function() {
     value = 0;
