@@ -22,42 +22,42 @@ var calculator = {
   },
   subtract: function(x,y) {
     if (isNaN(x) || (isNaN(y) && y !== undefined)) {
-      return notNumber(x,y);
+      return calculator.notNumber(x,y);
     }
     if (y === undefined) {
       y = x;
       x = calculator.mem1;
     }
-    return calculator.mem1 = x + y;
+    return calculator.mem1 = x - y;
   },
   multiply: function(x,y) {
     if (isNaN(x) || (isNaN(y) && y !== undefined)) {
-      return notNumber(x,y);
+      return calculator.notNumber(x,y);
     }
     if (y === undefined) {
       y = x;
       x = calculator.mem1;
     }
-    return calculator.mem1 = x + y;
+    return calculator.mem1 = x * y;
   },
   divide: function(x,y) {
     if (isNaN(x) || (isNaN(y) && y !== undefined)) {
-      return notNumber(x,y);
+      return calculator.notNumber(x,y);
     }
     if (y === undefined) {
       y = x;
       x = calculator.mem1;
     }
-    return calculator.mem1 = x + y;
+    return calculator.mem1 = x / y;
   },
   raise: function(x,y) {
     if (isNaN(x) || (isNaN(y) && y !== undefined)) {
-      return notNumber(x,y);
+      return calculator.notNumber(x,y);
     }
     if (y === undefined) {
       y = x;
       x = calculator.mem1;
     }
-    return calculator.mem1 = x + y;
+    return calculator.mem1 = x ** y;
   }
 }
