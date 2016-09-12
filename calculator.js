@@ -1,18 +1,18 @@
 var calculator = {
   mem1: 0,
   clear: function() {
-    calculator.mem1 = undefined;
+    calculator.mem1 = 0;
   },
   notNumber: function(x,y) {
-    if(y === undefined) {
-      return console.log(x + " is not a number.");
+    if (y === undefined) {
+      return console.log("'" + x + "' is not a number.");
     } else {
-      return console.log(x + " or " + y + " is not a number.");
+      return console.log("'" + x + "' or '" + y + "' is not a number.");
     }
   },
   add: function(x,y) {
     if (isNaN(x) || (isNaN(y) && y !== undefined)) {
-      return notNumber(x,y);
+      return calculator.notNumber(x,y);
     }
     if (y === undefined) {
       y = x;
