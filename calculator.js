@@ -35,13 +35,19 @@ var calculator = {
       return calculator.value = (calculator.value / x);
     }
   },
-  power: function (x,y){  //exponent//
+  power: function (x,y){    //exponent//
     console.log(Math.pow(x,y));
-    return(Math.pow(x,y));
+    if (arguments.length ==2){
+      return(Math.pow(x,y));
+    } else{
+      return calculator.value = (Math.pow(calculator.value, y));
+    }
   },
   sqroot: function (x){  //square root//
     console.log(Math.sqrt(x));
-    return(Math.sqrt(x));
+    if (calculator.value == 0){
+      return alert("Cannot square root by 0");
+    } else
+      return calculator.value = (Math.sqrt(calculator.value));
   }
-
 }
