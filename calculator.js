@@ -1,4 +1,4 @@
-var calc = {
+var calculator = {
   value: 0,
   clear: function() {
     this.value = 0;
@@ -8,19 +8,19 @@ var calc = {
     this.value = this.value + b;
     return this.value;
   },
-  sub: function(b) {
+  subtract: function(b) {
     this.value = this.value - b;
     return this.value;
   },
-  div: function(b) {
+  divide: function(b) {
     this.value = this.value/b;
     return this.value;
   },
-  mult: function(b) {
+  multiply: function(b) {
     this.value = this.value*b;
     return this.value;
   },
-  pow: function(b) {
+  exponentiate: function(b) {
     this.value = this.value**b;
     return this.value;
   }
