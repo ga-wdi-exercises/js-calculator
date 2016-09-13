@@ -15,3 +15,19 @@ var calculator = {
   return x*y
 }
 };
+
+var calculator = {
+  division: function(x,y) {
+    return x/y
+  }
+};
+var calculator = {
+  exponents: function(x,y){
+    return x**y
+  }
+};
+var calculator = {
+  cubed: function(x) {
+    return x*x*x
+  }
+};
