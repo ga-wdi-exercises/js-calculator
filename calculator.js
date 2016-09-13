@@ -1,18 +1,28 @@
 var calc = {
   value: 0,
-  add: function(a, b) {
-    return a + b;
+  clear: function() {
+    this.value = 0;
+    return this.value;
   },
-  sub: function(a,b) {
-    return a - b;
+  add: function(b) {
+    this.value = this.value + b;
+    return this.value;
   },
-  div: function(a,b) {
-    return a/b;
+  sub: function(b) {
+    this.value = this.value - b;
+    return this.value;
   },
-  mult: function(a,b) {
-    return a*b;
+  div: function(b) {
+    this.value = this.value/b;
+    return this.value;
   },
-  pow: function(a,b) {
-    return a**b;
+  mult: function(b) {
+    this.value = this.value*b;
+    return this.value;
+  },
+  pow: function(b) {
+    this.value = this.value**b;
+    return this.value;
   }
+
 }
