@@ -9,48 +9,88 @@ var calculator = {
 	},
 
 	// Addition
-	add: function(augend, addend) {
-		return augend + addend;
-	},
-	add: function(addend) {
-		calculator.value += addend;
-		return calculator.value;
+	add: function() {
+		// If 0 arguments
+		if (arguments.length === 0) {
+			return calculator.value
+		// If 1 arguments
+		} else if (arguments.length === 1) {
+			calculator.value += arguments[0];
+			return calculator.value;
+		// If 2 arguments
+		} else if (arguments.length === 2) {
+			return arguments[0] + arguments[1];
+		} else {
+			throw "Error: Bad Number of Arguments";
+		}
 	},
 
 	// Subtraction
-	subtract: function(minuend, subtrahend) {
-		return minuend - subtrahend;
-	},
-	subtract: function(subtrahend) {
-		calculator.value -= subtrahend;
-		return calculator.value;
+	subtract: function() {
+		// If 0 arguments
+		if (arguments.length === 0) {
+			return calculator.value
+		// If 1 arguments
+		} else if (arguments.length === 1) {
+			calculator.value -= arguments[0];
+			return calculator.value;
+		// If 2 arguments
+		} else if (arguments.length === 2) {
+			return arguments[0] - arguments[1];
+		} else {
+			throw "Error: Bad Number of Arguments";
+		}
 	},
 
 	// Multiplication
-	multiply: function(multiplicand, multiplier) {
-		return multiplicand * multiplier;
-	},
-	multiply: function(multiplier) {
-		calculator.value *= multiplier;
-		return calculator.value;
+	multiply: function() {
+		// If 0 arguments
+		if (arguments.length === 0) {
+			return calculator.value
+		// If 1 arguments
+		} else if (arguments.length === 1) {
+			calculator.value *= arguments[0];
+			return calculator.value;
+		// If 2 arguments
+		} else if (arguments.length === 2) {
+			return arguments[0] * arguments[1];
+		} else {
+			throw "Error: Bad Number of Arguments";
+		}
 	},
 
 	// Division
-	divide: function(dividend, divisor) {
-		return dividend / divisor;
-	},
-	divide: function(divisor) {
-		calculator.value /= divisor;
-		return calculator.value;
+	divide: function() {
+		// If 0 arguments
+		if (arguments.length === 0) {
+			return calculator.value
+		// If 1 arguments
+		} else if (arguments.length === 1) {
+			calculator.value /= arguments[0];
+			return calculator.value;
+		// If 2 arguments
+		} else if (arguments.length === 2) {
+			return arguments[0] / arguments[1];
+		} else {
+			throw "Error: Bad Number of Arguments";
+		}
 	},
 
 	// Exponents
-	exponentiate: function(base, exponent) {
-		return base ** exponent;
-	},
-	exponentiate: function(exponent) {
-		calculator.value **= exponent;
-		return calculator.value;
+	exponentiate: function() {
+		// If 0 arguments
+		if (arguments.length === 0) {
+			return calculator.value
+		// If 1 arguments
+		} else if (arguments.length === 1) {
+			calculator.value **= arguments[0];
+			return calculator.value;
+		// If 2 arguments
+		} else if (arguments.length === 2) {
+			return arguments[0] ** arguments[1];
+		} else {
+			throw "Error: Bad Number of Arguments";
+		}
 	},
 
 	// Factorial
@@ -70,8 +110,4 @@ var calculator = {
 			return (base * calculator.factorial(base - 1));
 		}
 	},
-	factorialCounter: 0,
-	factorial2: function() {
-		return calculator.factorial(calculator.value);
-	}
 }
