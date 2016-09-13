@@ -20,7 +20,7 @@ var calculator = {
     value = (typeof y !== 'undefined')? x / y : value / x
     return value
   },
-  exponent : function(x, y) {
+  exponentiate : function(x, y) {
     value = (typeof y !== 'undefined')? Math.pow(x, y) : Math.pow(value, x)
     return value
   },
