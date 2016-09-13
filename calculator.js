@@ -46,13 +46,20 @@ var calculator = {
 
   },
   squareRoot: function(x,y){
-    if (arguments.length == 0) {
-        return calculator.value = Math.sqrt(x);
+    if (arguments.length == 2) {
         alert("Only one argument can be entered for the square root function");
+        return calculator.value = Math.sqrt(x);
+
     }
     else{
         return calculator.value = Math.sqrt(x);
 
   }
+},
+
+clear : function(){
+  return calculator.value = 0;
 }
+
+
 };
