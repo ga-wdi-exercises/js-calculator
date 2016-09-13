@@ -15,8 +15,8 @@ var calculator = {
     console.log(x / y);
     return (x / y);
   },
-  // pow:function (x , y){
-  //   console.log(pow(x,y));
-  //   return (pow(x,y));
-  // }
+  exponentiate:function (x , y){
+    console.log(Math.pow(x,y));
+    return Math.pow(x,y);
+  }
 }
