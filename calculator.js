@@ -1,17 +1,18 @@
-var calculator = {
+var calc = {
+  value: 0,
   add: function(a, b) {
     return a + b;
   },
-  subtract: function(a,b) {
+  sub: function(a,b) {
     return a - b;
   },
-  divide: function(a,b) {
+  div: function(a,b) {
     return a/b;
   },
-  multiply: function(a,b) {
+  mult: function(a,b) {
     return a*b;
   },
-  power: function(a,b) {
+  pow: function(a,b) {
     return a**b;
   }
 }
