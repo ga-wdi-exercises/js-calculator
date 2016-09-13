@@ -29,7 +29,7 @@ var calculator = {
     return value
   },
   master : function(expression) {
-    value = parseInt(expression)
+    value = eval(expression)
     return value
   },
   clear : function() {
