@@ -28,6 +28,10 @@ var calculator = {
     value = (typeof y !== 'undefined')? Math.pow(x, 1/y) : Math.pow(value, 1/x)
     return value
   },
+  master : function(expression) {
+    value = parseInt(expression)
+    return value
+  },
   clear : function() {
     value = null
   }
