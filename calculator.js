@@ -18,5 +18,9 @@ var calculator = {
   divide: function ( num1, num2 ){
     console.log( num1 / num2 );
     return num1 / num2;
+  },
+  modulus: function ( num1, num2 ){
+    console.log( num1 % num2 );
+    return num1 % num2;
   }
 }
