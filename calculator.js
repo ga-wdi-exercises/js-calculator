@@ -18,6 +18,8 @@ var calculator = {
       y = x;
       x = calculator.mem1;
     }
+    x = parseInt(x);
+    y = parseInt(y);
     return calculator.mem1 = x + y;
   },
   subtract: function(x,y) {
@@ -28,6 +30,8 @@ var calculator = {
       y = x;
       x = calculator.mem1;
     }
+    x = parseInt(x);
+    y = parseInt(y);
     return calculator.mem1 = x - y;
   },
   multiply: function(x,y) {
@@ -38,6 +42,8 @@ var calculator = {
       y = x;
       x = calculator.mem1;
     }
+    x = parseInt(x);
+    y = parseInt(y);
     return calculator.mem1 = x * y;
   },
   divide: function(x,y) {
@@ -48,6 +54,8 @@ var calculator = {
       y = x;
       x = calculator.mem1;
     }
+    x = parseInt(x);
+    y = parseInt(y);
     return calculator.mem1 = x / y;
   },
   raise: function(x,y) {
@@ -58,6 +66,8 @@ var calculator = {
       y = x;
       x = calculator.mem1;
     }
+    x = parseInt(x);
+    y = parseInt(y);
     return calculator.mem1 = x ** y;
   }
 }
