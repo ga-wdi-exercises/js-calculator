@@ -2,22 +2,32 @@ confirm("I am working!");
 
 var calculator = {
   division: function divison(x, y) {
-    return x / y;
+    value = x / y;
+    return value;
   },
   mult: function mult(x, y) {
-    return x * y;
+    value = x * y;
+    return value;
   },
   sub: function sub(x, y) {
-    return x - y;
+    value = x - y;
+    return value;
   },
   add: function add(x, y) {
-    return x + y;
+    value = x + y;
+    return value;
   },
   square: function square(x) {
-    return Math.sqrt(x);
+    value = Math.sqrt(x);
+    return value;
   },
   power: function power(x, y) {
-    return Math.pow(x, y);
+    value = Math.pow(x, y);
+    return value;
+  },
+  clear: function clear() {
+    value = null;
+    return value;
   }
 };
 
