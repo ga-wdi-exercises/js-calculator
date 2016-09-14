@@ -3,7 +3,7 @@ console.log("working")
 
 
 var calculator = {
-  value : null,
+  value : 0,
   add : function(x, y) {
     value = (typeof y !== 'undefined')? x + y : value + x
     return value
@@ -33,6 +33,6 @@ var calculator = {
     return value
   },
   clear : function() {
-    value = null
+    value = 0
   }
 }
