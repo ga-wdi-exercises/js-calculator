@@ -12,8 +12,14 @@ var calculator = {
   },
   add: function add(x, y) {
     return x + y;
+  },
+  square: function square(x) {
+    return Math.sqrt(x);
+  },
+  power: function power(x, y) {
+    return Math.pow(x, y);
   }
-}
+};
 
 // calculator.mult(2, 2)
 // 4
