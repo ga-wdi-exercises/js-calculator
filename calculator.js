@@ -18,5 +18,9 @@ var calculator = {
   exponentiate:function (x , y){
     console.log(Math.pow(x,y));
     return Math.pow(x,y);
+  },
+  square:function (x , y){
+    console.log(x**y);
+    return (x**y);
   }
 }
