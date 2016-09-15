@@ -1,6 +1,11 @@
 var calculator = {
   add: function (a, b){
-    return a + b;
+    return{
+      value:a+b,
+      add:function(c){
+        return calculator.add(this.value, c)
+      }
+    }
   },
   subtract: function(a, b){
     return a - b;
