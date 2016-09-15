@@ -1,8 +1,11 @@
 //Calculator
 
+getElementsByName('a')
+getElementsByName('b')
+
 var sum = (){
   prompt add : function (a,b)
-  console.log (a+b)
+  prompt (a+b)
 }
 
 var subs= (){
