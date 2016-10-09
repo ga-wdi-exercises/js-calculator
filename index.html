@@ -13,15 +13,21 @@
       Welcome to the JS Calculator, please only use the buttons.
     </p>
 
-    <div id="result"></div>
-    <input type="text" value="0" id="entry"><br>
+
 
     <div id="keypad">
+
+      <div id="result"></div>
+      <input type="text" value="0" id="entry"><br>
+
+      <button onclick='random()' type="button">I'm Feeling Lucky</button>
+
       <div class="operators">
         <button onclick="addOperator(value)" value="*" type="button">x</button>
         <button onclick="addOperator(value)" value="+" type="button">+</button>
         <button onclick="addOperator(value)" value="-" type="button">-</button>
         <button onclick="addOperator(value)" value="/" type="button">/</button>
+        <button onclick="addOperator(value)" value="^" type="button">^</button>
       </div>
       <div class="numbers">
         <button onclick="addValue(value)" type="button" value="1">1</button>
@@ -40,10 +46,12 @@
       </div>
       <div class="numbers">
         <button onclick="addValue(value)" type="button" value="0">0</button>
+        <button onclick="addValue(value)" type="button" value=".">.</button>
       </div>
 
       <button onclick="clearCalculator()" type="button">Clear</button>
       <button onclick="solve()" type="button">Solve</button>
+      <button onclick="deleteEntry()" type="button">Delete</button>
 
   </div>
 

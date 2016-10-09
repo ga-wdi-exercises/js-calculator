@@ -17,6 +17,17 @@ function addResult () {
   calcValue = '';
 }
 
+function random() {
+  var number = Math.random().toFixed(2)*100;
+  calcValue = number;
+  document.getElementById('entry').value = calcValue;
+}
+
+function deleteEntry() {
+  calcValue= '';
+  document.getElementById('entry').value = calcValue;
+}
+
 //Functions-------------------------------------------------------
 
 function startCalculator () {
@@ -47,6 +58,7 @@ function solve() {
   var oldResult = calculation;
   document.getElementById('result').innerHTML = oldResult + ' = ' + eval(calculation);
   calculation = eval(calculation);
+  deleteEntry();
 }
 
 
