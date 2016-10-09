@@ -3,8 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>js-calc</title>
-  </head>
-  <body>
     <script src="calculator.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body onload="startCalculator()">
+
+    <h1>JS Calculator</h1>
+    <p>
+      Welcome to the JS Calculator, please only use the buttons.
+    </p>
+
+    <div id="result"></div>
+    <input type="text" value="0" id="entry"><br>
+
+    <div id="keypad">
+      <div class="operators">
+        <button onclick="addOperator(value)" value="*" type="button">x</button>
+        <button onclick="addOperator(value)" value="+" type="button">+</button>
+        <button onclick="addOperator(value)" value="-" type="button">-</button>
+        <button onclick="addOperator(value)" value="/" type="button">/</button>
+      </div>
+      <div class="numbers">
+        <button onclick="addValue(value)" type="button" value="1">1</button>
+        <button onclick="addValue(value)" type="button" value="2">2</button>
+        <button onclick="addValue(value)" type="button" value="3">3</button>
+      </div>
+      <div class="numbers">
+        <button onclick="addValue(value)" type="button" value="4">4</button>
+        <button onclick="addValue(value)" type="button" value="5">5</button>
+        <button onclick="addValue(value)" type="button" value="6">6</button>
+      </div>
+      <div class="numbers">
+        <button onclick="addValue(value)" type="button" value="7">7</button>
+        <button onclick="addValue(value)" type="button" value="8">8</button>
+        <button onclick="addValue(value)" type="button" value="9">9</button>
+      </div>
+      <div class="numbers">
+        <button onclick="addValue(value)" type="button" value="0">0</button>
+      </div>
+
+      <button onclick="clearCalculator()" type="button">Clear</button>
+      <button onclick="solve()" type="button">Solve</button>
+
+  </div>
+
   </body>
 </html>
