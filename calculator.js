@@ -1,6 +1,6 @@
 
 var value = 0;
-var calculator = function operator(value){
+var calculator = function value(){
 
 function add(x,y) {
   console.log(value(add));
@@ -30,6 +30,5 @@ Math.exp(x,y); {
 Math.floor(x,y); {
   console.log(value(Math.floor));
   return value(Math.floor(x,y));
-}
-
+  }
 };
