@@ -1,6 +1,6 @@
 var value = 0;
-// having problems defining calculator
-var calculator =  {
+
+var calculator = {
   addition: function(x,y) {
     value = x + y;
     return value;
