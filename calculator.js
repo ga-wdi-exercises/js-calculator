@@ -27,4 +27,9 @@ Math.exp(x,y); {
   return value(Math.exp(x,y));
 }
 
+Math.floor(x,y); {
+  console.log(value(Math.floor));
+  return value(Math.floor(x,y));
+}
+
 };
