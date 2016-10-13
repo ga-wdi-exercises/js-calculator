@@ -1,31 +1,69 @@
 
+
+var calculator = {
+  add: function(x,y){
+    return x * y
+  },
+  minus: function(x,y){
+    return x - y
+  },
+  multiply: function(x,y){
+    return x * y
+  },
+  division: function(x,y){
+
+    if (x > y){
+      return (x / y)
+    }else {
+    return (y / x)
+  }
+},
+  exponent: function(x,y){
+    return Math.pow(x,y);
+  },
+  sqrt: function(x){
+    return Math.sqrt(x);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // minus: function(first,second){
+  //   return first - second;
+  //  }
+
 // function myfunction(){
 //    x = document.getElementById("one").nodeValue;
 //   return document.getElementById("box").innerHTML = x;
 // }
 
-var x = document.getElementById("one");
-console.log(x);
-var y = x.firstChild.nodeValue;
-console.log(y)
+// function add2screen(){
+// var x = document.getElementsByClassName("numbkey");
+// console.log(x);
+// var y = x.firstChild.nodeValue;
+// console.log(y)
+// document.getElementById("screen").innerHTML = y
+// }
 
 // from the beg
 
 
-//
-//
-// var answer;
-//
-// var calculator = {
-//   first: 0,
-//   second: 0,
-//  add: function(first,second){
-//     return first + second;
-//    },
-//   minus: function(first,second){
-//     return first - second;
-//    }
-// };
+
+
+
 //
 // function addnumber(){
 // var numb1 = Number(prompt("Enter Your First Number"));
