@@ -19,6 +19,7 @@ let calculator = {
   // Exponents (Hint: Look up Javascript's Math object)
   expo: function(a, b) {
     return Math.pow(a, b);
-  }
+  },
   // An operation of your choice!
+
 };
