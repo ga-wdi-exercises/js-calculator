@@ -9,6 +9,9 @@ let calculator = {
     return a - b;
   },
   // Multiplication
+  multi: function(a, b) {
+    return a * b;
+  }
   // Division
   // Exponents (Hint: Look up Javascript's Math object)
   // An operation of your choice!
