@@ -5,6 +5,9 @@ let calculator = {
     return a + b;
   },
   // Subtraction
+  sub: function(a, b) {
+    return a - b;
+  },
   // Multiplication
   // Division
   // Exponents (Hint: Look up Javascript's Math object)
