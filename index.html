@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>js-calc</title>
-  </head>
-  <body>
-    <script src="calculator.js" charset="utf-8"></script>
+    <title>MY calculator</title>
+</head>
+
+<body bgcolor="red">
+    <center><br>
+        <h1><B><font color ="white" style ="font-size:70"> Eriks Calculator </font></B><h1></B>
+<hr size=20 color ="black"/>
+
+<div style = "width:261px; background: blue"/>
+<form name ="Calculator"/>
+<input name="Display" placeholder= "0" style ="width:254px; height:60px; text-align:right; font-size:30px; border-radius:8px; margin 3px"/>
+<br>
+
+<input type ="button" value=" 7 " onclick ="Document.Calculator.Display.value +='7'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px; margin:3px"/>
+<input type ="button" value=" 8 " onclick ="Document.Calculator.Display.value +='8'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px;"/>
+<input type ="button" value=" 9 " onclick ="Document.Calculator.Display.value +='9'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px;"/>
+<input type ="button" value=" + " onclick ="btnplus()" style ="width:40px; height:60px; font-size:30px; border-radius:8px"/>
+
+<br>
+
+<input type ="button" value=" 4 " onclick ="Document.Calculator.Display.value +='4'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px; margin:3px"/>
+<input type ="button" value=" 5 " onclick ="Document.Calculator.Display.value +='5'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px;"/>
+<input type ="button" value=" 6 " onclick ="Document.Calculator.Display.value +='6'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px;"/>
+<input type ="button" value=" - " onclick ="btnsub()" style ="width:40px; height:60px; font-size:30px; border-radius:8px"/>
+
+<br>
+<input type ="button" value=" 1 " onclick ="Document.Calculator.Display.value +='1'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px; margin:3px"/>
+<input type ="button" value=" 2 " onclick ="Document.Calculator.Display.value +='2'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px;"/>
+<input type ="button" value=" 3 " onclick ="Document.Calculator.Display.value +='3'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px;"/>
+<input type ="button" value=" * " onclick ="btnmult()" style ="width:40px; height:60px; font-size:30px; border-radius:8px"/>
+<br>
+<input type ="button" value=" 0 " onclick ="Document.Calculator.Display.value +='0'" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px; margin:3px"/>
+<input type ="button" value=" ^ " onclick ="btnexp()" style ="width:40px; height:60px; font-size:30px; border-radius:8px"/>
+<input type ="button" value=" . " onclick ="btndot()" style ="width:40px; height:60px; font-size:30px; border-radius:8px"/>
+<input type ="button" value=" / " onclick ="btndiv()" style ="width:40px; height:60px; font-size:30px; border-radius:8px"/>
+<br>
+<input type ="button" value=" = " onclick ="Document.Calculator.Display.value = eval(Document.Calculator.display.value)" style="width:60px: Hieght:60px; font-size:30px; border-radius:8px; margin:3px"/>
+<input type ="button" value=" C " onclick ="btnclear()" style ="width:40px; height:60px; font-size:30px; border-radius:8px"/>
+
+
+
+
+
+ <script src="calculator.js" charset="utf-8"></script>
   </body>
 </html>
