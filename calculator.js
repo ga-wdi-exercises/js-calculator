@@ -1,9 +1,12 @@
-
+let memory;
 var calculator = {
 
 addition: function(x,y){
-  return (x+y);
+  memory = x+y;
+  console.log (x+y);
 },
+
+
 subtraction: function(x,y){
   return (x-y);
 },
@@ -15,6 +18,8 @@ division: function(x,y){
 },
 exponents: function(x,y){
   return Math.pow(x,y);
+},
+multiplyByTen: function(x){
+  return (x*10);
 }
-
 };
