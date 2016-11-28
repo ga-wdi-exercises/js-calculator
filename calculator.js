@@ -65,7 +65,9 @@ for(let i = 0; i < keys.length; i++){
     }
     else if (btnVal === "=") {
       let screenShot = input.innerHTML;
+      console.log(screenShot);
       let arr = screenShot.split("");
+      
       let numArr = [parseInt(arr[0]), parseInt(arr[2])];
       let operator = arr[1];
       console.log(numArr);
