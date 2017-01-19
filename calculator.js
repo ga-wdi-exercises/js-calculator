@@ -1,9 +1,9 @@
 
-// var NumsInPlay = [];
-// var numA = NumsInPlay[0];
-// var numB = NumsInPlay[1];
+var numsInPlay = [];
+var numA = numsInPlay[0];
+var numB = numsInPlay[1];
 
-// var calculator = {
+//  var calculator = {
 
 // }
 
@@ -26,3 +26,13 @@ function remainder(numA, numB){
 	return numA % numB;
 }
 
+function insertValue(num){
+	numsInPlay.push(num);
+};
+
+
+insertValue(2);
+console.log(numsInPlay);
+insertValue(3);
+console.log(numsInPlay[0]);
+console.log(numA);
