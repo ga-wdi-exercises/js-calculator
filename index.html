@@ -5,6 +5,37 @@
     <title>js-calc</title>
   </head>
   <body>
+  <div class="calcContainer">
+  <div class="inputArea">
+  	<form><input id=inputArea type="text" value="0"></form>
+  </div>
+  <div class="operators">
+  <form>
+  <input type="button" onclick="add()" value="+">
+  <input type="button" onclick="subtract()" value="-">
+  <input type="button" onclick="multiply()" value="x">
+  <input type="button" onclick="divide()" value="/">
+  <input type="button" onclick="remainder()" value="%">
+  </form>
+  <form>
+  <input type="button" onclick="updateValue(1)" value="1">
+  <input type="button" onclick="updateValue(2)" value="2">
+  <input type="button" onclick="updateValue(3)" value="3">
+  <input type="button" onclick="updateValue(4)" value="4">
+  <input type="button" onclick="updateValue(5)" value="5"><br>
+  <input type="button" onclick="updateValue(6)" value="6">
+  <input type="button" onclick="updateValue(7)" value="7">
+  <input type="button" onclick="updateValue(8)" value="8">
+  <input type="button" onclick="updateValue(9)" value="9">
+  <input type="button" onclick="updateValue(0)" value="0">
+  </form>
+  <form>
+  	<input type='button' onclick="clearField(num)" value="Clear">
+  </form>
+  	
+  </div>
+
+  </div>
     <script src="calculator.js" charset="utf-8"></script>
   </body>
 </html>
