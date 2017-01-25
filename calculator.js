@@ -10,5 +10,11 @@ var calculator = {
   },
   divide: function ( a, b ) {
     console.log( a / b );
+  },
+  exponent: function( a, b ) {
+    console.log(Math.pow(a,b));
+  },
+  remain: function( a, b ) {
+    console.log( a%b );
   }
  }
