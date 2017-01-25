@@ -1,20 +1,20 @@
 var calculator = {
-  function add(num1, num2) {
-
-  }
-  function subtract() {
-
-  }
-  function multiply() {
-
-  }
-  function divide() {
-
-  }
-  function exponents() {
-
-  }
-  function modulus () {
-
+  add: function(num1, num2) {
+    return num1 + num2;
+  },
+  subtract: function(num1,num2) {
+    return num1 - num2;
+  },
+  multiply: function(num1,num2) {
+    return num1 * num2;
+  },
+  divide: function(num1,num2) {
+    return num1 / num2;
+  },
+  exponents: function(num1,num2) {
+    return num1 ** num2;
+  },
+  modulus: function(num1,num2) {
+    return num1 % num2;
   }
 }
