@@ -1,22 +1,42 @@
-// 
-var calc ={
-	window: "",
-	add: (num1, num2) => num1 + num2,
-	subt: (num1, num2) => num1 - num2,
-	mult: (num1, num2) => num1 * num2,
-	divide: (num1, num2) => num1 / num2,
-	expon: (num, exp) => Math.pow(num ** exp),
-	modul: (num1, num2) => num1 % num2
+// $(document).ready(function() {
+
+var calc = {
+    window: "",
+    add: (num1, num2) => num1 + num2,
+    subt: (num1, num2) => num1 - num2,
+    mult: (num1, num2) => num1 * num2,
+    divide: (num1, num2) => num1 / num2,
+    expon: (num, exp) => Math.pow(num, exp),
+    remainder: (num1, num2) => num1 % num2
 }
 
-console.log(calc.subt(4, 2))
+// console.log(calc.subt(4, 2))
+
+
+
+
+
+
+// $(document).ready(function(){
+
+// })
+
+
+function getWindow(str) {
+    calc.window = str;
+}
+console.log(calc.expon(2, 4))
+// });
+
+
+
 // var numsInPlay = [];
 // var numA = numsInPlay[0];
 // var numB = numsInPlay[1];
 
 //  var calculator = {
-	// wait for button click 
-	// enter number sequence, number one then number two
+// wait for button click 
+// enter number sequence, number one then number two
 
 
 // }
@@ -47,8 +67,8 @@ console.log(calc.subt(4, 2))
 // }
 
 // function isThisAnOperator() {
-	//if an operator button is pressed so we chan then 
-	//change back into number entry mode
+//if an operator button is pressed so we chan then 
+//change back into number entry mode
 // }
 // function placeInDoc(numop){
 // 	Document.getElementById('inputArea').innerhtml = numop
