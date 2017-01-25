@@ -15,55 +15,55 @@ var calculator = {
   value: 0,
   add: function maths(num1,num2) {
       if (num2 == null) {
-        calc.value += num1;
-        return calc.value;
+        calculator.value += num1;
+        return calculator.value;
       }
       else {
-        calc.value = (num1 + num2);
-        return calc.value;
+        calculator.value = (num1 + num2);
+        return calculator.value;
       }
     },
     subtract: function maths(num1,num2) {
       if (num2 == null) {
-        calc.value -= num1;
-        return calc.value;
+        calculator.value -= num1;
+        return calculator.value;
       }
       else {
-        calc.value = (num1 - num2);
-        return calc.value;
+        calculator.value = (num1 - num2);
+        return calculator.value;
       }
     },
     multiply: function maths(num1,num2) {
       if (num2 == null) {
-        calc.value *= num1;
-        return calc.value;
+        calculator.value *= num1;
+        return calculator.value;
       }
       else {
-        calc.value = (num1 * num2);
-        return calc.value;
+        calculator.value = (num1 * num2);
+        return calculator.value;
       }
     },
     divide: function maths(num1,num2) {
       if (num2 == null) {
-        calc.value = (calc.value / num1);
-        return calc.value;
+        calculator.value = (calculator.value / num1);
+        return calculator.value;
       }
       else {
-        calc.value = (num1 / num2);
-        return calc.value;
+        calculator.value = (num1 / num2);
+        return calculator.value;
       }
     },
     exponent: function maths(num1,num2) {
       if (num2 == null) {
-        calc.value = Math.pow(calc.value,num1);
-        return calc.value;
+        calculator.value = Math.pow(calculator.value,num1);
+        return calculator.value;
       }
       else {
-        calc.value = Math.pow(num1,num2);
-        return calc.value;
+        calculator.value = Math.pow(num1,num2);
+        return calculator.value;
       }
     },
     clear: function reset() {
-      return calc.value = 0;
+      return calculator.value = 0;
     }
 }
