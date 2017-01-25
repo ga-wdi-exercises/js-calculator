@@ -14,7 +14,7 @@ var calculator = {
   },
   expo: function(num1,num2){
     console.log(Math.pow(num1,num2));
-  }
+  },
   modulous: function(num1,num2){
     console.log(num1%num2);
   }
