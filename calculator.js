@@ -18,3 +18,5 @@ var calculator = {
     console.log( a%b );
   }
  }
+
+var value = []
