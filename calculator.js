@@ -25,8 +25,13 @@ const calculator = {
     calculator.currentNumber = x && y ? x % y : calculator.currentNumber % x;
     return "Modulo operation successful. Current number is " + calculator.currentNumber;
   },
-  exponent(n) {
-    calculator.currentNumber = Math.pow(calculator.currentNumber, n);
+  exponent(x, n) {
+    if (n) {
+      calculator.clear();
+      calculator.currentNumber = Math.pow(x, n);
+    } else {
+      calculator.currentNumber = Math.pow(calculator.currentNumber, x);
+    }
     return "Exponent operation successful. Current number is " + calculator.currentNumber;
   },
   clear() {

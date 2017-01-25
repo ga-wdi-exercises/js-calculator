@@ -5,6 +5,18 @@
     <title>js-calc</title>
   </head>
   <body>
+    <h1>Open the Dev Tools console to use the calculator.</h1>
+    <h2>Access all methods and properties via the global "calculator" object.</h2>
+    <h2>Available Methods</h2>
+    <ul>
+      <li><strong>.add(x, y)</strong> - Adds x and y. Saves sum in "currentNumber." If only one parameter is provided (e.g. calculator.add(2)), then the provided number is added to the current number (saved from last operation).</li>
+      <li><strong>.subtract(x, y)</strong> - Subtracts y from x. Saves result in "currentNumber." If only one parameter is provided (e.g. calculator.subtract(2)), then the provided number is subtracted from the current number.</li>
+      <li><strong>.multiply(x, y)</strong> - Multiplies x and y. Saves result in "currentNumber." If only one parameter is provided (e.g. calculator.multiply(2)), then the current number (saved from last operation) is multiplied by the provided number.</li>
+      <li><strong>.divide(x, y)</strong> - Divides x by y. Saves result in "currentNumber." If only one parameter is provided (e.g. calculator.divide(2)), then the current number (saved from last operation) is divided by the provided number.</li>
+      <li><strong>.modulo(x, y)</strong> - Returns the remainder of x divided by y and stores result in "currentNumber." If only one parameter is provided (e.g. calculator.modulo(2)), then it returns the remainder of dividing the current number (saved from last operation) by the provided number.</li>
+      <li><strong>.modulo(x, y)</strong> - Returns the remainder of x divided by y and stores result in "currentNumber." If only one parameter is provided (e.g. calculator.modulo(2)), then it returns the remainder of dividing the current number (saved from last operation) by the provided number.</li>
+      <li><strong>.master(equation)</strong> - Returns the evaluation of the equation. Nothing more, nothing less.</li>
+    </ul>
     <script src="calculator.js" charset="utf-8"></script>
   </body>
 </html>
