@@ -4,6 +4,9 @@ var numA = numsInPlay[0];
 var numB = numsInPlay[1];
 
 //  var calculator = {
+	wait for button click 
+	enter number sequence, number one then number two
+
 
 // }
 
@@ -28,11 +31,34 @@ function remainder(numA, numB){
 
 function insertValue(num){
 	numsInPlay.push(num);
-};
+
+	addEventListener(click, isThisAnOperator(): EventListener, capture?: boolean)
+}
+
+function isThisAnOperator() {
+	//if an operator button is pressed so we chan then 
+	//change back into number entry mode
+}
+function placeInDoc(numop){
+	Document.getElementById('inputArea').innerhtml = numop
+}
 
 
-insertValue(2);
-console.log(numsInPlay);
-insertValue(3);
-console.log(numsInPlay[0]);
-console.log(numA);
+// function square(num){
+// 	return (num ** 2)
+// }
+
+// function expon(num, exp){
+// 	return(num ** exp)
+// }
+// const addition = (num1, num2) => num1 + num2;
+// const subt = (num1, num2) => num1 - num2;
+// const mult = (num1, num2) => num1 * num2;
+// const divide = (num1, num2) => num1 / num2;
+// const modul = (num1, num2) => num1 % num2;
+//---------------
+// const square = (num) => num ** 2;
+// const expon = (num, exp) => num ** exp;
+// console.log(expon(3, 2));
+
+// console.log(square(10));
