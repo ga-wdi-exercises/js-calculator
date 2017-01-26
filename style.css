@@ -1,0 +1,54 @@
+/*
+div {
+  height: 50px;
+  width: 100px;
+  background: red;
+  margin: 15px;
+  padding: 15px;
+}*/
+#table {
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  background: #aaaaaa;
+  padding: 15px;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+#entries {
+  display: flex;
+  justify-content: space-around;
+  background: green;
+}
+#numbers {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#numbers > button {
+  background: red;
+  margin: 20px;
+  padding: 15px;
+}
+#operations {
+  height: 400px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#operations > button {
+  background: blue;
+  margin: 20px;
+  padding: 15px;
+  height: 25px;
+}
+input {
+  flex-grow: 3;
+  height: 80px;
+  width: 480px;
+  margin-top: 15px;
+}
