@@ -14,7 +14,7 @@ return(num1/num2);
 exponents:function(num1,num2){
 return(Math.pow(num1,num2));
 },
-square:function(num1,num2){
-return(num1*num2);
+square:function(num1){
+return(num1*num1);
 }
 }
