@@ -1,7 +1,6 @@
 // $(document).ready(function() {
 
 var calc = {
-    window: "",
     add: (num1, num2) => num1 + num2,
     subt: (num1, num2) => num1 - num2,
     mult: (num1, num2) => num1 * num2,
@@ -22,10 +21,29 @@ var calc = {
 // })
 
 
-function getWindow(str) {
-    calc.window = str;
-}
-console.log(calc.expon(2, 4))
+// function getWindow(str) {
+//     calc.window = str;
+// }
+
+// function posttoWindow(str){
+
+
+
+
+// }
+
+
+// console.log(calc.expon(2, 4))
+
+
+// var button = $("button");
+
+// function handleClickEvent(){
+//   console.log("I was clicked!");
+// }
+
+// // This is the event listener
+// button.on("click", handleClickEvent);
 // });
 
 
