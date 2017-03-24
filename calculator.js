@@ -63,5 +63,8 @@ var calculator = {
 			console.log(calculator.helpTopics[i]);
 		}
 	},
+	master: function(stringOfValues) {
+		console.log(stringOfValues);
+	},
 	helpTopics: ['add: adds items', 'subtract: subtracts from first parameter', 'multiply: multipies items', 'divide: divides items', 'exponent: first parameter is the number you want to multipy, second parameter is your exponent value', "square_root: enter a single parameter and find it's square root", "value: displays the value", "clear: clears the value, sets it to 0"]
 }
