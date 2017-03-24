@@ -1,7 +1,7 @@
 var calculator = {
 	add: function() {
 		var returnVal;
-		if (calculator.value === null) {
+		if (calculator.value === null || calculator.value === 0) {
 			returnVal = 0;
 		} else {
 			returnVal = calculator.value;
@@ -12,10 +12,9 @@ var calculator = {
 		calculator.value = returnVal;
 		console.log(calculator.value);
 	},
-
 	subtract: function() {
 		var returnVal;
-		if (calculator.value === null) {
+		if (calculator.value === null || calculator.value === 0) {
 			returnval = arguments[0];
 		} else {
 			returnVal = calculator.value;
@@ -26,10 +25,9 @@ var calculator = {
 		calculator.value = returnVal;
 		console.log(calculator.value);
 	},
-
-	mutiply: function(a, b) {
-    var returnVal;
-		if (calculator.value === null) {
+	mutiply: function() {
+		var returnVal;
+		if (calculator.value === null || calculator.value === 0) {
 			returnval = arguments[0];
 		} else {
 			returnVal = calculator.value;
@@ -40,7 +38,6 @@ var calculator = {
 		calculator.value = returnVal;
 		console.log(calculator.value);
 	},
-  
 	divide: function(a, b) {
 		calculator.value = a / b;
 		calculator.returnVal();
@@ -53,11 +50,18 @@ var calculator = {
 		calculator.value = Math.sqrt(a);
 		calculator.returnVal();
 	},
-	value: null,
+	value: 0,
 	clear: function() {
-		calculator.value = null;
+		calculator.value = 0;
+		console.log(calculator.value);
 	},
 	returnVal: function() {
 		console.log(calculator.value);
-	}
+	},
+	help: function() {
+		for (var i = 0; i < calculator.helpTopics.length; i++) {
+			console.log(calculator.helpTopics[i]);
+		}
+	},
+	helpTopics: ['add: adds items', 'subtract: subtracts from first parameter', 'multiply: multipies items', 'divide: divides items', 'exponent: first parameter is the number you want to multipy, second parameter is your exponent value', "square_root: enter a single parameter and find it's square root", "value: displays the value", "clear: clears the value, sets it to 0"]
 }
