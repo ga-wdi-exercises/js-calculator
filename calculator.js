@@ -10,7 +10,7 @@ var calculator = {
 			returnVal += arguments[i];
 		}
 		calculator.value = returnVal;
-		console.log(calculator.value);
+		calculator.returnVal();
 	},
 	subtract: function() {
 		var returnVal;
@@ -23,11 +23,11 @@ var calculator = {
 			returnVal -= arguments[i];
 		}
 		calculator.value = returnVal;
-		console.log(calculator.value);
+		calculator.returnVal();
 	},
-	mutiply: function() {
+	multiply: function() {
 		var returnVal;
-		if (calculator.value === null || calculator.value === 0) {
+		if (calculator.value === 0) {
 			returnval = arguments[0];
 		} else {
 			returnVal = calculator.value;
@@ -36,10 +36,19 @@ var calculator = {
 			returnVal *= arguments[i];
 		}
 		calculator.value = returnVal;
-		console.log(calculator.value);
+		calculator.returnVal();
 	},
 	divide: function(a, b) {
-		calculator.value = a / b;
+		var returnVal;
+		if (calculator.value === 0) {
+			returnval = arguments[0];
+		} else {
+			returnVal = calculator.value;
+		}
+		for (var i = 0; i < arguments.length; i++) {
+			returnVal /= arguments[i];
+		}
+		calculator.value = returnVal;
 		calculator.returnVal();
 	},
 	exponent: function(a, b) {
@@ -64,7 +73,10 @@ var calculator = {
 		}
 	},
 	master: function(stringOfValues) {
-		console.log(stringOfValues);
+		calculator.value = parseFloat(stringOfValues);
+		calculator.returnVal();
 	},
-	helpTopics: ['add: adds items', 'subtract: subtracts from first parameter', 'multiply: multipies items', 'divide: divides items', 'exponent: first parameter is the number you want to multipy, second parameter is your exponent value', "square_root: enter a single parameter and find it's square root", "value: displays the value", "clear: clears the value, sets it to 0"]
+	helpTopics: ['IMPORTANT NOTE: make sure to clear your value variable\nor that value will be used as the first parameter','add: adds items', 'subtract: subtracts from first parameter', 'multiply: multipies items', 'divide: divides items', 'exponent: first parameter is the number you want to multipy\n second parameter is your exponent value', "square_root: enter a single parameter and find it's square root", "master: enter a string of operations and this function will return a single value", "value: displays the value", "clear: clears the value, sets it to 0"]
 }
+
+console.log("Calculator loaded");
