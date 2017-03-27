@@ -1,6 +1,23 @@
+var memory = 4;
+
+var outcome;
+
+var updateValue = function() {
+	value = value + outcome;
+};
+
+var updateNewOutcome= function() {
+  newOutcome = newOutcome + outcome;
+}
+
+var clearMemory = function() {
+	memory = 0;
+}:
+
 var calculator = {
-	multiply: function(num1, num2){
-		console.log(num1 * num2)
+	multiply: function(num1){
+		memory = memory * num1;
+		return memory;
 	},
 
 	subtract: function(num1, num2) {
@@ -17,7 +34,7 @@ var calculator = {
 
 	remainder: function(num1, num2) {
 		console.log(num1 % num2);
-	}
+	},
 
 }
 

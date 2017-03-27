@@ -1,0 +1,14 @@
+#input  {
+	height: 50px;
+	width: 50px;
+	border: 2px solid;
+	border-color: yellow;
+}
+
+#result {
+	height: 50px;
+	width: 50px;
+	border: 2px solid;
+	border-color: navy blue;
+
+}
