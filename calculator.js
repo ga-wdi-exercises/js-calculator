@@ -19,5 +19,9 @@ var calculator = {
   //exponent
   expo: function(num1,pow) {
      return Math.pow(num1,pow)
-   }
+   },
+  //remainder
+  modulo: function(num1,num2) {
+    return num1%num2
+  }
 }
