@@ -1,6 +1,6 @@
 
 /Store Global Variable/
-var memory = 4;
+var memory = 0;
 
 
 /Function to reset memory to 0/
@@ -16,7 +16,7 @@ var calculator = {
 
 	subtract: function(num1) {
 		memory = memory - num1;
-		console.log(memory - num2);
+		console.log(memory - num1);
 		return memory;
 	},
 
