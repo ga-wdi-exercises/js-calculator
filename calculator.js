@@ -25,3 +25,7 @@ var calculator = {
     return num1%num2
   }
 }
+
+if (calculator.value == ''){
+
+}
