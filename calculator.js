@@ -61,4 +61,16 @@ var calculator = {
     this.value = sum
     return sum
   },
+
+  master: function(equation) {
+    if(equation) {
+      var sum = eval(equation);
+    }
+    this.value = sum
+    return sum
+  },
+
+  clear: function() {
+  return this.value = 0
+  }
 }
