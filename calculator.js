@@ -1,22 +1,24 @@
-var calculator = {
-}
+var calculator = { }
 
 function add (num1, num2) {
    console.log(num1 + num2);
    return num1 + num2;
- }
+ };
+    add (5,4);
 
- add (5,4);
-
- function sub (num1, num2) {
+function sub (num1, num2) {
    console.log(num1 - num2);
    return num1 - num2;
- }
+ };
+    sub (6,4);
 
- sub (6,4);
-
- function multiply (num1, num2) {
+function multiply (num1, num2) {
    console.log(num1 * num2);
-   return num1 * num2;}
+   return num1 * num2;
+ };
+    multiply (5,4);
 
-multiply (5,4);
+function division (num1, num2) {
+  return num1 / num2;
+}
+  division (6,3);
