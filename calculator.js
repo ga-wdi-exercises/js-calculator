@@ -9,8 +9,12 @@ var calculator = {
   },
 
   //subtract
-  subtract: function(num1,num2) {
-    return num1 - num2;
+  subtract: function() {
+    calculator.value = arguments[0];
+      for (var i = 1; i < arguments.length; i++) {
+        calculator.value -= arguments[i];
+    }
+    console.log(calculator.value);
   },
   //multiply
   multiply: function(num1,num2) {
@@ -32,5 +36,5 @@ var calculator = {
     calculator.value = null;
   },
   //store value
-  value: null,
+  value: null
 }
