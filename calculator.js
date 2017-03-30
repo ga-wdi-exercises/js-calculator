@@ -10,19 +10,25 @@ var calculator = {
 
   //subtract
   subtract: function() {
-    calculator.value = arguments[0];
-      for (var i = 1; i < arguments.length; i++) {
-        calculator.value -= arguments[i];
+    // for (var i = 1; i < arguments.length; i++) {
+    //   calculator.value = arguments[0] - arguments[i];
+    // }
+
+    for (var i = 0; i < arguments.length; i++) {
+      calculator.value -= arguments[i];
     }
-    console.log(calculator.value);
+
+    return calculator.value
   },
   //multiply
-  multiply: function(num1,num2) {
-     return num1 * num2;
+  multiply: function(num1, num2) {
+    return num1 * num2
   },
   //divide
-  divide: function(num1,num2) {
-     return num1 / num2;
+  divide: function() {
+    for (var i = 0; i < arguments.length; i++) {
+      calculator.value = calculator.value / arguments[i]
+    }
   },
   //exponent
   expo: function(num1,pow) {
@@ -33,8 +39,8 @@ var calculator = {
     return num1%num2
   },
   clear: function() {
-    calculator.value = null;
+    calculator.value = 0;
   },
   //store value
-  value: null
+  value: 0
 }
