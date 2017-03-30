@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>js-calc</title>
-  </head>
-  <body>
-    <script src="calculator.js" charset="utf-8"></script>
-  </body>
+ <head>
+   <meta charset="utf-8">
+   <title> Abe's Calculator </title>
+   <script src="calculator.js" charset="utf-8"></script>
+ </head>
+
+ <body>
+   <h1> Abe's Calculator </h1>
+   <form name=calcform>
+   <input type=text name=txt1> <br>
+
+
+   <input type=button name=btnAdd value=+ onclick="displynum(btnAdd.value)">
+   <input type=button name=btnSub value=- onclick="displynum(btnSub.value)">
+   <input type=button name=btnMul value=* onclick="displynum(btnMul.value)">
+   <input type=button name=btnDiv value=/ onclick="displynum(btnDiv.value)">
+
+   <input type=button name=btn9 value=9 onclick="displynum(btn9.value)">
+   <input type=button name=btn8 value=8 onclick="displynum(btn8.value)">
+   <input type=button name=btn7 value=7 onclick="displynum(btn7.value)">
+   <input type=button name=btn6 value=6 onclick="displynum(btn6.value)">
+   <input type=button name=btn5 value=5 onclick="displynum(btn5.value)">
+   <input type=button name=btn4 value=4 onclick="displynum(btn4.value)">
+   <input type=button name=btn3 value=3 onclick="displynum(btn3.value)">
+   <input type=button name=btn2 value=2 onclick="displynum(btn2.value)">
+   <input type=button name=btn1 value=1 onclick="displynum(btn1.value)">
+   <input type=button name=btn0 value=0 onclick="displynum(btn0.value)">
+
+   <input type=button name=btnEql value== onclick="txt1.value=eval(txt1.value)"">
+
+
+
+
+ </body>
+
+
 </html>
