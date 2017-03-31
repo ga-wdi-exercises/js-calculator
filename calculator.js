@@ -9,26 +9,16 @@ var calculator = {
   },
 
   //subtract
-  subtract: function() {
-    // for (var i = 1; i < arguments.length; i++) {
-    //   calculator.value = arguments[0] - arguments[i];
-    // }
-
-    for (var i = 0; i < arguments.length; i++) {
-      calculator.value -= arguments[i];
-    }
-
-    return calculator.value
+  subtract: function(num1,num2) {
+    return num1 - num2
   },
   //multiply
   multiply: function(num1, num2) {
     return num1 * num2
   },
   //divide
-  divide: function() {
-    for (var i = 0; i < arguments.length; i++) {
-      calculator.value = calculator.value / arguments[i]
-    }
+  divide: function(num1, num2) {
+    return num1 / num2
   },
   //exponent
   expo: function(num1,pow) {
@@ -37,10 +27,5 @@ var calculator = {
   //remainder
   modulo: function(num1,num2) {
     return num1%num2
-  },
-  clear: function() {
-    calculator.value = 0;
-  },
-  //store value
-  value: 0
+  }
 }
