@@ -1,13 +1,8 @@
 var calculator = {
   //add
-  add: function() {
-    //loop through and add the length of arguments
-    for (var i = 0; i < arguments.length; i++) {
-      calculator.value += arguments[i]
-    }
-    console.log(calculator.value);
+  add: function(num1,num2) {
+    return num1 + num2
   },
-
   //subtract
   subtract: function(num1,num2) {
     return num1 - num2
@@ -29,3 +24,10 @@ var calculator = {
     return num1%num2
   }
 }
+
+console.log(calculator.add(3,4));
+console.log(calculator.subtract(15,6));
+console.log(calculator.multiply(8,8));
+console.log(calculator.divide(40,10));
+console.log(calculator.expo(2,2));
+console.log(calculator.modulo(144,12));
