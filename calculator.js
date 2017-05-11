@@ -22,6 +22,9 @@ expo:  function (num1,num2){
 formula: function (num1,num2){
       console.log(10*num1+num2);
       return 10*num1 + num2 ;
-    }
+    },
+master:function(num1,num2,num3){
+  return ((num1 - num2) * (num3 ** num1));
+}
 
 }
