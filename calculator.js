@@ -2,33 +2,63 @@
 var y
 var value = 0
 var calculator = {
-  add: function (y) {
+  add: function (y, x) {
+    if (x === undefined){
     value = value + y
+  }
+  else {
+    value = y + x
+  }
     changeText()
     return value
   },
-  subtract: function (y) {
+  subtract: function (y, x) {
+    if (x === undefined){
     value = value - y
+  }
+  else {
+    value = y - x
+  }
     changeText()
     return value
   },
-  multiply: function (y) {
-    value = value * y
+  multiply: function (y, x) {
+    if (x === undefined){
+      value = value * y
+  }
+    else {
+      value = y * x
+    }
     changeText()
     return value
   },
-  divide: function (y) {
+  divide: function (y, x) {
+    if (x === undefined){
     value = value / y
+  }
+  else {
+    value = y / x
+  }
     changeText()
     return value
   },
-  remainder: function (y) {
+  remainder: function (y, x) {
+    if (x === undefined){
     value = value % y
+  }
+  else {
+    value = y % x
+  }
     changeText()
     return value
   },
-  exponent: function (y) {
+  exponent: function (y, x) {
+    if (x === undefined){
     value = Math.pow(value, y)
+  }
+  else {
+    value = Math.pow(y, x)
+  }
     changeText()
     return value
   },
