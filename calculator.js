@@ -47,7 +47,7 @@ var calculator = {
     changeText()
     return value
   },
-  exponent: function (y, x) {
+  exponentiate: function (y, x) {
     if (x === undefined) {
       value = Math.pow(value, y)
     } else {
