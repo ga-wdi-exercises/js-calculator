@@ -18,7 +18,7 @@ var calculator = {
   },
   multiply: function (a, b) {
     if (b === undefined) {
-      return this.value * a
+      return this.value *= a
     } else {
       return this.value = a * b
     }
@@ -26,7 +26,7 @@ var calculator = {
   },
   divide: function (a, b) {
     if (b === undefined) {
-      return this.value / a
+      return this.value /= a
     } else {
       return this.value = a / b
     }
@@ -34,7 +34,7 @@ var calculator = {
   },
   exponent: function (a, b) {
     if (b === undefined) {
-      return this.value ** a
+      return this.value **= a
     } else {
       return this.value = a ** b
     }
@@ -42,7 +42,7 @@ var calculator = {
   },
   remainder: function (a, b) {
     if (b === undefined) {
-      return this.value % a
+      return this.value %= a
     } else {
       return this.value = a % b
     }
