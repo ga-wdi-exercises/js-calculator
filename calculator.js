@@ -1,31 +1,68 @@
-var value = []
+var value = null
 var calculator = {
   add (a, b) {
-    value.push(a + b)
-    return a + b
+    if (b === undefined) {
+      let answer = value + a
+      value = answer
+      return answer
+    } else {
+      value = a + b
+      return a + b
+    }
   },
   subtract (a, b) {
-    value.push(a - b)
-    return a - b
+    if (b === undefined) {
+      let answer = value - a
+      value = answer
+      return answer
+    } else {
+      value = a - b
+      return a - b
+    }
   },
   multiply (a, b) {
-    value.push(a * b)
-    return a * b
+    if (b === undefined) {
+      let answer = value * a
+      value = answer
+      return answer
+    } else {
+      value = a * b
+      return a * b
+    }
   },
   divide (a, b) {
-    value.push(a / b)
-    return a / b
+    if (b === undefined) {
+      let answer = value / a
+      value = answer
+      return answer
+    } else {
+      value = a / b
+      return a / b
+    }
   },
   power (a, b) {
-    value.push(a ** b)
-    return a ** b
+    if (b === undefined) {
+      let answer = value ** a
+      value = answer
+      return answer
+    } else {
+      value = a ** b
+      return a ** b
+    }
   },
   root (a, b) {
-    value.push(a ** (1 / b))
-    return a ** (1 / b)
+    if (b === undefined) {
+      let answer = value ** (1 / a)
+      value = answer
+      return answer
+    } else {
+      value = a ** (1 / b)
+      return a ** (1 / b)
+    }
   },
   clear () {
-    return value = []
+    value = null
+    return 'Memory cleared.'
   }
 }
 
