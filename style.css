@@ -1,0 +1,13 @@
+body {
+  background: black;
+  padding: 0 auto;
+
+}
+
+h1 {
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin: 400px;;
+}
