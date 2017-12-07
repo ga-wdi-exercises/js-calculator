@@ -10,8 +10,10 @@ var calculator = {
   },
   divide: (num1, num2) => {
     return num1 / num2
+  },
+  exponentiate: (num1, num2) => {
+    return num1 ** num2
   }
-  // exponent
   // remainder
 }
 
