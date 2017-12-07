@@ -13,8 +13,11 @@ var calculator = {
   },
   exponentiate: (num1, num2) => {
     return num1 ** num2
+  },
+  remainder: (num1, num2) => {
+    return num1 % num2
   }
-  // remainder
 }
 
+// to get rid of Standard JS error that calculator is assigned a value but never used
 console.log(calculator)
