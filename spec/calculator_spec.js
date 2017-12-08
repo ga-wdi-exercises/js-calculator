@@ -1,5 +1,5 @@
 var fs = require("fs")
-var solution = fs.readFileSync("calculator.js","utf8")
+var solution = fs.readFileSync("calculator.js","utf-8")
 describe("Solution", function(){
   it("has no syntax errors", function(){
     eval(solution)
