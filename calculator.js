@@ -1,36 +1,62 @@
 var calculator = {
-  memory: 0,
-  clearMemory: function () {
-    this.memory = 0
+  value: 0,
+  clear: function () {
+    this.value = 0
   },
   add: function (addend1, addend2) {
+    if (addend2 === undefined) {
+      addend2 = this.value
+    }
+
     let sum = addend1 + addend2
-    this.memory = sum
+    this.value = sum
     return sum
   },
   subtract: function (minuend, subtrahend) {
+    if (subtrahend === undefined) {
+      subtrahend = minuend
+      minuend = this.value
+    }
+
     let difference = minuend - subtrahend
-    this.memory = difference
+    this.value = difference
     return difference
   },
   multiply: function (factor1, factor2) {
+    if (factor2 === undefined) {
+      factor2 = this.value
+    }
+
     let product = factor1 * factor2
-    this.memory = product
+    this.value = product
     return product
   },
   divide: function (dividend, divisor) {
+    if (divisor === undefined) {
+      divisor = dividend
+      dividend = this.value
+    }
     let quotient = dividend / divisor
-    this.memory = quotient
+    this.value = quotient
     return quotient
   },
   exponentiate: function (base, exponent) {
+    if (exponent === undefined) {
+      exponent = base
+      base = this.value
+    }
+
     let result = base ** exponent
-    this.memory = result
+    this.value = result
     return result
   },
   remainder: function (dividend, divisor) {
+    if (divisor === undefined) {
+      divisor = dividend
+      dividend = this.value
+    }
     let result = dividend % divisor
-    this.memory = result
+    this.value = result
     return result
   }
 }
